@@ -22,7 +22,7 @@ const   articlesRoutes          = require("./src/articles"),
 passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: "https://ricebook-hw7.surge.sh/auth/github/callback"
+    callbackURL: "https://ricebook-hw7.herokuapp.com/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // console.log(profile);
