@@ -17,7 +17,7 @@ const   articlesRoutes          = require("./src/articles"),
         followingRoutes         = require("./src/following"),
         profileRoutes           = require("./src/profile");
 
-seedDB();
+// seedDB();
 
 passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
