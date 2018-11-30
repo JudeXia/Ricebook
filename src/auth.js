@@ -349,7 +349,7 @@ module.exports.authRoutes = (app) => {
   app.put('/password', middleware.isLoggedIn, putPassword);
   app.get('/auth/github', passport.authenticate('github'));
   app.get('/auth/github/callback',passport.authenticate('github'), function(req, res) {
-    res.redirect('http://localhost:4200/#/main')
+    res.redirect('https://ricebook-hw7.surge.sh/#/main')
   });
   
   app.put('/linkAccount', middleware.isLoggedIn, linkAccount);
