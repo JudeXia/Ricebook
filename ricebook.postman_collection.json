@@ -1,0 +1,595 @@
+{
+	"info": {
+		"_postman_id": "795bea07-3ea3-4415-9e35-71ef6c67b2b1",
+		"name": "ricebook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{url}}/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"xx21\",\r\n    \"password\": \"asd\"\r\n}"
+				},
+				"url": {
+					"raw": "http://{{url}}/login?",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "xx21",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "asd",
+							"disabled": true
+						}
+					]
+				},
+				"description": "login test"
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/logout",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/logout",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"logout"
+					]
+				},
+				"description": "logout"
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"sdzcxx\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/password",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/articles/5be1b3a0bfcc8d63dcceeb57",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"articles",
+						"5be1b3a0bfcc8d63dcceeb57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/article",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"This is a new article of xx\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/article/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"article",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/articles",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Revised Comment2222\", \n\t\"commentId\": \"\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/articles/5be1b3a0bfcc8d63dcceeb57",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"articles",
+						"5be1b3a0bfcc8d63dcceeb57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/headlines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/headlines",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"headlines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/headline",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"headline\": \"Revised Headline\"\n}"
+				},
+				"url": {
+					"raw": "http://{{url}}/headline",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"headline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/following",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/following",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"following"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/following",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/following/5be1b1d544550734d43e3974",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"following",
+						"5be1b1d544550734d43e3974"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/following",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/following/5be1b1d544550734d43e3973",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"following",
+						"5be1b1d544550734d43e3973"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userProfile\": {\n\t\t\"username\":\"asd\",\n\t\t\"displayName\":\"asd\",\n\t\t\"email\":\"xx21@rice.asd\",\n\t\t\"phone\":\"1234567892\",\n\t\t\"birthday\":\"765954000000\",\n\t\t\"zipcode\":\"12345\",\n\t\t\"password\":\"asd\",\n\t\t\"confirm\":\"asd\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://{{url}}/register",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/email/",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"email",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/email",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"test@rice.edu\"\n}"
+				},
+				"url": {
+					"raw": "http://{{url}}/email",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/zipcode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/zipcode",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"zipcode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/zipcode",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"zipcode\": \"99999\"\n}"
+				},
+				"url": {
+					"raw": "http://{{url}}/zipcode",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"zipcode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/phone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/phone",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/phone",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\": \"9999999999\"\n}"
+				},
+				"url": {
+					"raw": "http://{{url}}/phone",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/avatars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/avatars/",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"avatars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/avatar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"avatar\": \"https://cdn.auth0.com/blog/logos/node.png\"\n}"
+				},
+				"url": {
+					"raw": "http://{{url}}/avatar",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/dob",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{url}}/dob",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"dob"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "63cdb37f-6283-41e8-9fe2-bc602a913cb9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ea3544cb-9059-476d-a227-9713db0936db",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "dd201b90-d28f-4782-8737-00d0cecb8a6f",
+			"key": "url",
+			"value": "ricebook-hw6.herokuapp.com",
+			"type": "string"
+		}
+	]
+}

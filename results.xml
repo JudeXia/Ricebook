@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Validate Article functionality" errors="0" tests="4" failures="0" time="2.549" timestamp="2018-11-09T13:26:09">
+  <testcase classname="Validate Article functionality" name="should give me eight articles" time="0.647"></testcase>
+  <testcase classname="Validate Article functionality" name="should give me the article with a valid id" time="0.729"></testcase>
+  <testcase classname="Validate Article functionality" name="should not give me the article with a invalid id" time="0.554"></testcase>
+  <testcase classname="Validate Article functionality" name="should give me list of articles with new article after post new article" time="0.619"></testcase>
+</testsuite>
+<testsuite name="Validate Auth functionality" errors="0" tests="3" failures="0" time="1.21" timestamp="2018-11-09T13:26:11">
+  <testcase classname="Validate Auth functionality" name="should log in a valid user" time="0.432"></testcase>
+  <testcase classname="Validate Auth functionality" name="should log out current user" time="0.53"></testcase>
+  <testcase classname="Validate Auth functionality" name="should register a new user" time="0.246"></testcase>
+</testsuite>
+<testsuites>
+<testsuite name="Validate Headline functionality" errors="0" tests="2" failures="0" time="1.094" timestamp="2018-11-09T13:26:13">
+  <testcase classname="Validate Headline functionality" name="should get headline for current logged in user" time="0.533"></testcase>
+  <testcase classname="Validate Headline functionality" name="should edit headline for current logged in user" time="0.56"></testcase>
+</testsuite>
+</testsuites>
